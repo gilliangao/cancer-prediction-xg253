@@ -2,7 +2,7 @@ import click
 import pandas as pd
 import numpy as np
 from pathlib import Path
-from cancer_prediction.cancer_model import CancerModel
+from cancer_prediction_xg253.cancer_model import CancerModel
 
 @click.group()
 def cli():

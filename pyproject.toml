@@ -10,6 +10,7 @@ dependencies = [
     "ipykernel>=6.30.1",
     "pandas>=2.3.2",
     "matplotlib>=3.10.6",
+    "streamlit>=1.58.0",
 ]
 
 [dependency-groups]
@@ -18,3 +19,16 @@ dev = [
     "flake8>=5.0.4",
     "isort>=5.13.2",
 ]
+
+[project.scripts]
+cancer-prediction = "cancer_prediction_xg253.scripts.app:cli"
+train = "cancer_prediction_xg253.scripts.app:train"
+
+
+
+[build-system]
+requires = ["uv_build>=0.9.5,<0.10.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+package = true
